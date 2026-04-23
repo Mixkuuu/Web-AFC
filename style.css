@@ -1,0 +1,129 @@
+body {
+margin:0;
+font-family:Poppins;
+background:linear-gradient(#ffe5f2,#ffcce0);
+overflow-x:hidden;
+}
+
+/* NAV */
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:10px;
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.menu-btn{
+font-size:25px;
+cursor:pointer;
+}
+
+/* SIDEBAR */
+.sidebar{
+position:fixed;
+left:-200px;
+top:0;
+width:200px;
+height:100%;
+background:white;
+padding:20px;
+transition:0.3s;
+z-index:999;
+}
+.sidebar a{
+display:block;
+margin:10px 0;
+cursor:pointer;
+}
+
+/* SECTION */
+.section{
+padding:100px 20px;
+text-align:center;
+min-height:100vh;
+}
+
+/* LOGO */
+.logo{
+width:120px;
+border-radius:20px;
+}
+
+/* CARD */
+.card{
+background:white;
+padding:15px;
+margin:10px;
+border-radius:15px;
+display:inline-block;
+}
+
+/* OWNER */
+.owner img,.admin img{
+width:80px;
+border-radius:50%;
+}
+
+/* LINE */
+.line{
+width:2px;
+height:40px;
+background:#ff4da6;
+margin:10px auto;
+}
+
+/* ADMINS */
+.admins{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+/* POPUP */
+.popup-bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.popup-box{
+background:white;
+padding:20px;
+border-radius:15px;
+}
+
+/* MUSIC */
+.music-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+}
+
+/* SAKURA */
+.particle{
+position:fixed;
+width:10px;
+height:10px;
+background:pink;
+animation:fly 1s forwards;
+}
+
+@keyframes fly{
+to{
+transform:translate(50px,-50px);
+opacity:0;
+}
+}
